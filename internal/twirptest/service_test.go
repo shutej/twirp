@@ -29,10 +29,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/jsonpb"
+	"github.com/shutej/protobuf/jsonpb"
 
-	"github.com/twitchtv/twirp"
-	"github.com/twitchtv/twirp/internal/descriptors"
+	"github.com/shutej/twirp"
+	"github.com/shutej/twirp/internal/descriptors"
 )
 
 func TestServeJSON(t *testing.T) {

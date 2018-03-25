@@ -14,10 +14,10 @@ It has these top-level messages:
 */
 package importer
 
-import proto "github.com/golang/protobuf/proto"
+import proto "github.com/shutej/protobuf/proto"
 import fmt "fmt"
 import math "math"
-import _ "github.com/twitchtv/twirp/internal/twirptest/importable"
+import _ "github.com/shutej/twirp/internal/twirptest/importable"
 
 // Reference imports to suppress errors if they are not otherwise used.
 var _ = proto.Marshal

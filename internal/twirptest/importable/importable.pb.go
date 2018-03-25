@@ -15,7 +15,7 @@ It has these top-level messages:
 */
 package importable
 
-import proto "github.com/golang/protobuf/proto"
+import proto "github.com/shutej/protobuf/proto"
 import fmt "fmt"
 import math "math"
 

@@ -20,8 +20,8 @@ import (
 	"compress/gzip"
 	"io/ioutil"
 
-	"github.com/golang/protobuf/proto"
-	protobuf "github.com/golang/protobuf/protoc-gen-go/descriptor"
+	"github.com/shutej/protobuf/proto"
+	protobuf "github.com/shutej/protobuf/protoc-gen-go/descriptor"
 	"github.com/pkg/errors"
 )
 

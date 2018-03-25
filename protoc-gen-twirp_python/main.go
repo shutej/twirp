@@ -22,12 +22,12 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/twitchtv/twirp/internal/gen"
-	"github.com/twitchtv/twirp/internal/gen/stringutils"
-	"github.com/twitchtv/twirp/internal/gen/typemap"
+	"github.com/shutej/protobuf/proto"
+	"github.com/shutej/protobuf/protoc-gen-go/descriptor"
+	plugin "github.com/shutej/protobuf/protoc-gen-go/plugin"
+	"github.com/shutej/twirp/internal/gen"
+	"github.com/shutej/twirp/internal/gen/stringutils"
+	"github.com/shutej/twirp/internal/gen/typemap"
 )
 
 func main() {

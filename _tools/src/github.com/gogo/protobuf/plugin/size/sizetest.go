@@ -49,7 +49,7 @@ func (p *test) Generate(imports generator.PluginImports, file *generator.FileDes
 	testingPkg := imports.NewImport("testing")
 	protoPkg := imports.NewImport("github.com/gogo/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
-		protoPkg = imports.NewImport("github.com/golang/protobuf/proto")
+		protoPkg = imports.NewImport("github.com/shutej/protobuf/proto")
 	}
 	for _, message := range file.Messages() {
 		ccTypeName := generator.CamelCaseSlice(message.TypeName())

@@ -11,9 +11,9 @@
 // express or implied. See the License for the specific language governing
 // permissions and limitations under the License.
 //
-// This file contains some code from https://github.com/golang/protobuf:
+// This file contains some code from https://github.com/shutej/protobuf:
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/shutej/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are

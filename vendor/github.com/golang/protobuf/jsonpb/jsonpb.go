@@ -1,7 +1,7 @@
 // Go support for Protocol Buffers - Google's data interchange format
 //
 // Copyright 2015 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/shutej/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -51,9 +51,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/shutej/protobuf/proto"
 
-	stpb "github.com/golang/protobuf/ptypes/struct"
+	stpb "github.com/shutej/protobuf/ptypes/struct"
 )
 
 // Marshaler is a configurable object for converting between

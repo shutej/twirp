@@ -12,9 +12,9 @@
 // permissions and limitations under the License.
 //
 //
-// This file contains some code from https://github.com/golang/protobuf:
+// This file contains some code from https://github.com/shutej/protobuf:
 // Copyright 2010 The Go Authors.  All rights reserved.
-// https://github.com/golang/protobuf
+// https://github.com/shutej/protobuf
 //
 // Redistribution and use in source and binary forms, with or without
 // modification, are permitted provided that the following conditions are
@@ -51,9 +51,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
-	"github.com/twitchtv/twirp/internal/gen/stringutils"
+	"github.com/shutej/protobuf/protoc-gen-go/descriptor"
+	plugin "github.com/shutej/protobuf/protoc-gen-go/plugin"
+	"github.com/shutej/twirp/internal/gen/stringutils"
 )
 
 // Each type we import as a protocol buffer (other than FileDescriptorProto) needs

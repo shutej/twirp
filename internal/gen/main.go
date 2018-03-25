@@ -18,9 +18,9 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/protoc-gen-go/descriptor"
-	plugin "github.com/golang/protobuf/protoc-gen-go/plugin"
+	"github.com/shutej/protobuf/proto"
+	"github.com/shutej/protobuf/protoc-gen-go/descriptor"
+	plugin "github.com/shutej/protobuf/protoc-gen-go/plugin"
 )
 
 type Generator interface {

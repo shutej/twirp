@@ -10,10 +10,10 @@ import fmt "fmt"
 import ioutil "io/ioutil"
 import http "net/http"
 
-import jsonpb "github.com/golang/protobuf/jsonpb"
-import proto "github.com/golang/protobuf/proto"
-import twirp "github.com/twitchtv/twirp"
-import ctxsetters "github.com/twitchtv/twirp/ctxsetters"
+import jsonpb "github.com/shutej/protobuf/jsonpb"
+import proto "github.com/shutej/protobuf/proto"
+import twirp "github.com/shutej/twirp"
+import ctxsetters "github.com/shutej/twirp/ctxsetters"
 
 // ==============
 // Svc2 Interface

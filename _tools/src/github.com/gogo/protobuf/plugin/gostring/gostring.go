@@ -140,7 +140,7 @@ func (p *gostring) Generate(file *generator.FileDescriptor) {
 	stringsPkg := p.NewImport("strings")
 	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
-		protoPkg = p.NewImport("github.com/golang/protobuf/proto")
+		protoPkg = p.NewImport("github.com/shutej/protobuf/proto")
 	}
 	sortPkg := p.NewImport("sort")
 	strconvPkg := p.NewImport("strconv")

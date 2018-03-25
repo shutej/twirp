@@ -20,9 +20,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/twitchtv/twirp"
-	"github.com/twitchtv/twirp/clientcompat/internal/clientcompat"
+	"github.com/shutej/protobuf/proto"
+	"github.com/shutej/twirp"
+	"github.com/shutej/twirp/clientcompat/internal/clientcompat"
 )
 
 func main() {

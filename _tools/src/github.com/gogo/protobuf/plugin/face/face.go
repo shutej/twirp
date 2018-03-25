@@ -156,7 +156,7 @@ func (p *plugin) Generate(file *generator.FileDescriptor) {
 	p.PluginImports = generator.NewPluginImports(p.Generator)
 	protoPkg := p.NewImport("github.com/gogo/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
-		protoPkg = p.NewImport("github.com/golang/protobuf/proto")
+		protoPkg = p.NewImport("github.com/shutej/protobuf/proto")
 	}
 	for _, message := range file.Messages() {
 		if !gogoproto.IsFace(file.FileDescriptorProto, message.DescriptorProto) {

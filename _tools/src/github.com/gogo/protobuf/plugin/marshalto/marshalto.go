@@ -1247,7 +1247,7 @@ func (p *marshalto) Generate(file *generator.FileDescriptor) {
 	p.sortKeysPkg = p.NewImport("github.com/gogo/protobuf/sortkeys")
 	p.protoPkg = p.NewImport("github.com/gogo/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
-		p.protoPkg = p.NewImport("github.com/golang/protobuf/proto")
+		p.protoPkg = p.NewImport("github.com/shutej/protobuf/proto")
 	}
 	p.unsafePkg = p.NewImport("unsafe")
 	p.errorsPkg = p.NewImport("errors")

@@ -273,7 +273,7 @@ func (p *testProto) Generate(imports generator.PluginImports, file *generator.Fi
 	unsafePkg := imports.NewImport("unsafe")
 	protoPkg := imports.NewImport("github.com/gogo/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
-		protoPkg = imports.NewImport("github.com/golang/protobuf/proto")
+		protoPkg = imports.NewImport("github.com/shutej/protobuf/proto")
 	}
 	for _, message := range file.Messages() {
 		ccTypeName := generator.CamelCaseSlice(message.TypeName())
@@ -548,7 +548,7 @@ func (p *testText) Generate(imports generator.PluginImports, file *generator.Fil
 	timePkg := imports.NewImport("time")
 	protoPkg := imports.NewImport("github.com/gogo/protobuf/proto")
 	if !gogoproto.ImportsGoGoProto(file.FileDescriptorProto) {
-		protoPkg = imports.NewImport("github.com/golang/protobuf/proto")
+		protoPkg = imports.NewImport("github.com/shutej/protobuf/proto")
 	}
 	//fmtPkg := imports.NewImport("fmt")
 	for _, message := range file.Messages() {

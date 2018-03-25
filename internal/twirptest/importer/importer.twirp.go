@@ -3,7 +3,7 @@
 
 /*
 Package importer is a generated twirp stub package.
-This code was generated with github.com/twitchtv/twirp/protoc-gen-twirp v5.3.0.
+This code was generated with github.com/shutej/twirp/protoc-gen-twirp v5.3.0.
 
 Test to make sure that importing other packages doesnt break
 
@@ -20,12 +20,12 @@ import fmt "fmt"
 import ioutil "io/ioutil"
 import http "net/http"
 
-import jsonpb "github.com/golang/protobuf/jsonpb"
-import proto "github.com/golang/protobuf/proto"
-import twirp "github.com/twitchtv/twirp"
-import ctxsetters "github.com/twitchtv/twirp/ctxsetters"
+import jsonpb "github.com/shutej/protobuf/jsonpb"
+import proto "github.com/shutej/protobuf/proto"
+import twirp "github.com/shutej/twirp"
+import ctxsetters "github.com/shutej/twirp/ctxsetters"
 
-import twirp_internal_twirptest_importable "github.com/twitchtv/twirp/internal/twirptest/importable"
+import twirp_internal_twirptest_importable "github.com/shutej/twirp/internal/twirptest/importable"
 
 // Imports only used by utility functions:
 import io "io"
@@ -351,7 +351,7 @@ type TwirpServer interface {
 	// ServiceDescriptor returns gzipped bytes describing the .proto file that
 	// this service was generated from. Once unzipped, the bytes can be
 	// unmarshalled as a
-	// github.com/golang/protobuf/protoc-gen-go/descriptor.FileDescriptorProto.
+	// github.com/shutej/protobuf/protoc-gen-go/descriptor.FileDescriptorProto.
 	//
 	// The returned integer is the index of this particular service within that
 	// FileDescriptorProto's 'Service' slice of ServiceDescriptorProtos. This is a
