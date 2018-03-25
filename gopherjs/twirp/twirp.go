@@ -316,7 +316,7 @@ func (e *twerr) MetaMap() map[string]string {
 }
 
 func (e *twerr) Error() string {
-	return fmt.Sprintf("twirp error %s: %s", e.code, e.msg)
+	return fmt.Sprintf("twirp error %s: %s", (string)(e.code), e.msg)
 }
 
 // wrappedErr fulfills the twirp.Error interface and the

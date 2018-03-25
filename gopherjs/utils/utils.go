@@ -59,7 +59,7 @@ func NewXHRRequest(method, url_ string, body io.Reader) (req *XHRRequest, err er
 	req = &XHRRequest{
 		Method: method,
 		URL:    u,
-		Header: nil,
+		Header: make(header.Header),
 		Body:   rc,
 	}
 	return
@@ -68,6 +68,12 @@ func NewXHRRequest(method, url_ string, body io.Reader) (req *XHRRequest, err er
 func (_ xhrClient) Do(request *XHRRequest) (response *XHRResponse, err error) {
 	xhrRequest := xhr.NewRequest(request.Method, request.URL.String())
 	xhrRequest.ResponseType = xhr.ArrayBuffer
+	for k, v := range request.Header {
+		if len(v) == 0 {
+			continue
+		}
+		xhrRequest.SetRequestHeader(k, v[0])
+	}
 	var requestData []byte
 	if requestData, err = ioutil.ReadAll(request.Body); err != nil {
 		return
